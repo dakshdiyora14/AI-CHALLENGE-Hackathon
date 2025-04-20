@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Warm, justice-oriented color palette with earth tones, soft blues, greens */
+  --color-primary: #2A7F62; /* Green */
+  --color-secondary: #576CA8; /* Soft blue */
+  --color-accent: #D4A373; /* Earth tone */
+  --color-background: #FDFCF7; /* Off-white */
+  --color-text: #3C3C3B; /* Dark gray */
+  --color-warning: #B86F52; /* Terracotta */
+  --color-success: #4F772D; /* Olive green */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.btn-primary {
+  @apply bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-800 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors;
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+} 
